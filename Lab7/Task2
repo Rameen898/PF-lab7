@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{
+    int a[10], i, n, c=0;
+
+    printf("Enter 10 numbers:\n");
+    for(i=0;i<10;i++)
+        scanf("%d",&a[i]);
+
+    printf("Enter a number to search: ");
+    scanf("%d",&n);
+
+    for(i=0;i<10;i++)
+    {
+        if(a[i]==n)
+            c++;
+    }
+
+    if(c>0)
+        printf("Number occurs %d times",c);
+    else
+        printf("Number not found");
+
+    return 0;
+}
